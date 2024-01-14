@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    line-height: 1.5 !important;
+    color: #333;
+}
+b, i{
+    font-weight: 700;
+    color: #454545;
+}
+a{
+    text-decoration: none;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding-left: 18rem;
+    background-color: #dedede;
+}
+
+#side_bar{
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    left: 0;
+    position: fixed;
+    padding: 1rem;
+    width: 18rem;
+    height: 100vh;
+    background-color: #333;
+}
+
+.info{
+    padding: 0.5rem;
+    width: 70%;
+    margin: auto auto 0;
+}
+
+.image img{
+    width: 100%;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+}
+
+.image img:hover{
+    border-color: #fff;
+}
+
+.table_of_content{
+    width: 100%;
+    margin-bottom: auto;
+}
+
+.table_of_content .item a{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #aaa;
+}
+
+.table_of_content .item a:hover{
+    color: #ddd;
+}
+
+.resume-section{
+    display: flex;
+    box-sizing: border-box;
+    padding: 3rem;
+    max-width: 75rem;
+    min-height: 100vh;
+    background-color: #eee;
+    margin: 0 auto 2px auto;
+}
+.resume-container{
+    width: 100%;
+    margin: auto;
+}
+.resume-container p{
+    font-size: 1.3rem;
+}
+.resume-container .name{
+    color: #343434;
+    font-size: 5rem;
+    font-weight: 900;
+}
+.resume-container .welcome{
+    font-size: 2.5rem;
+}
+.resume-container .summary-info{
+    margin-bottom: 2rem;
+}
+.summary-info .University-info{
+    font-size: 1.5rem;
+}
+.University-info a b:hover{
+    color: black;
+}
+.resume-container .language-used{
+    margin-top: 3rem;
+}
+.resume-container .contact{
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: column;
+}
+.contact ul{
+    margin-left: 2rem;
+}
+.contact ul li a, .contact ul li i{
+    color: #009eff;
+}
+
+.social-list{
+    margin-top: 2rem;
+}
+.social-list .items{
+    display: flex;
+    font-size: 2.5rem;
+}
+.social-list .items li{
+    margin-right: 1rem;
+}
