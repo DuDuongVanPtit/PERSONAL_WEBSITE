@@ -76,13 +76,36 @@ body {
         padding: 70px;
     }
 
+    
+
 }
-/* Tablet & Mobile & PC*/
+
+/* Tablet & Mobile */
 @media screen and (max-width: 991.98px){
     #side_bar{
         display: none;
     }
+
 }
+
+/* Tablet and PC*/
+@media screen and (min-width: 500px){
+    .resume-container .name{
+        font-family: 'Anton', sans-serif;
+        color: #343434;
+        font-size: 8rem;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 499.98px){
+    .resume-container .name{
+        font-family: 'Anton', sans-serif;
+        color: #343434;
+        font-size: 5rem;
+    }
+}
+
+/* Tablet & Mobile & PC*/
 .resume-section{
     padding: 5rem 2rem;
     display: flex;
@@ -98,11 +121,6 @@ body {
 }
 .resume-container p{
     font-size: 2.2rem;
-}
-.resume-container .name{
-    font-family: 'Anton', sans-serif;
-    color: #343434;
-    font-size: 8rem;
 }
 .resume-container .title{
     color: #343434;
