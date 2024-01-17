@@ -15,7 +15,8 @@
     <title>CV - Dương Dự</title>
 </head>
 <body>
-    <div id="side_bar">
+    <!-- nav_bar on pc -->
+    <nav id="side_bar">
         <div class="info">
             <div class="image">
                 <img src="./img/avatar.jpg" alt="ảnh đại diện của Dương Văn Dự">
@@ -24,7 +25,7 @@
         <div class="table_of_content">
             <ul class="content-items">
                 <li class="item">
-                    <a class="item-link" href="#about">
+                    <a class="item-link active-color" href="#about">
                         about me
                     </a>
                 </li>
@@ -60,7 +61,55 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </nav>
+    <!-- nav_bar on tablet & mobile -->
+    <nav id="nav_bar">
+        <div class="image">
+            <img src="./img/avatar.jpg" alt="ảnh đại diện của Dương Văn Dự">
+        </div>
+        <button id="click">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-table_of_content">
+            <ul class="content-items">
+                <li class="item">
+                    <a class="nav_item-link active-color" href="#about">
+                        about me
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="nav_item-link" href="#experience">
+                        experience
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="nav_item-link" href="#education">
+                        education
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="nav_item-link" href="">
+                        skills
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="nav_item-link" href="">
+                        projects    
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="nav_item-link" href="">
+                        interests
+                    </a>
+                </li>
+                <li class="item">
+                    <a class="nav_item-link" href="">
+                        the end
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <section class="resume-section" id="about">
         <div class="resume-container">
@@ -97,13 +146,13 @@
             </div>
             
             <div class="social-list">
-                <ul class="items">
-                    <li class="item">
+                <ul class="social-items">
+                    <li class="social-item">
                         <a href="https://github.com/DuDuongVanPtit" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </li>
-                    <li class="item">
+                    <li class="social-item">
                         <a href="https://www.facebook.com/du.duongvan.9843" target="_blank">
                             <i class="fa-brands fa-facebook"></i>
                         </a>

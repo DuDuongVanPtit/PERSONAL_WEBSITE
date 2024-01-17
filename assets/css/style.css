@@ -22,6 +22,9 @@ body {
         padding-left: 270px;
         background-color: #dedede;
     }
+    #nav_bar{
+        display: none;
+    }
     #side_bar{
         display: flex;
         flex-flow: column;
@@ -86,6 +89,56 @@ body {
         display: none;
     }
 
+    #nav_bar{
+        border-top: #b5b5b5 0.5px solid;
+        border-bottom: #b5b5b5 0.5px solid;
+        position: fixed;
+        padding: 5px 15px;
+        display: flex;
+        justify-content:space-between;
+        width: 100%;
+        height: 60px;
+        background-color: #333;
+    }
+    .image{
+        display: flex;
+        width: 42px;
+        margin: auto 0;
+    }
+    .image img{
+        width: 100%;
+        border-radius: 50%;
+        margin: auto 0;
+    }
+    #nav_bar #click{
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0);
+        border: 0.5px #ddd solid;
+        border-radius: 5px;
+    }
+    #nav_bar i{
+        margin: auto 0;
+        font-size: 25px;
+        color: #777;
+    }
+    .nav-table_of_content{
+        display: none;
+        padding: 1rem 1.5rem;
+        width: 100%;
+        background-color: #333;
+        position: fixed;
+        top: 60px;
+        right: 0;
+    }
+    .active{
+        display: block;
+    }
+    .nav-table_of_content .nav_item-link{
+        color: #aaa;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
 }
 
 /* Tablet and PC*/
@@ -107,7 +160,7 @@ body {
 
 /* Tablet & Mobile & PC*/
 .resume-section{
-    padding: 5rem 2rem;
+    padding: 6rem 2rem;
     display: flex;
     box-sizing: border-box;
     max-width: 1200px;
@@ -120,7 +173,7 @@ body {
     margin: auto;
 }
 .resume-container p{
-    font-size: 2.2rem;
+    font-size: clamp(1.6rem, 1.9vw + 1rem, 2.2rem);
 }
 .resume-container .title{
     color: #343434;
@@ -128,22 +181,19 @@ body {
     font-weight: 900;
 }
 .resume-container .welcome{
-    font-size: 4rem;
+    font-size: clamp(2rem, 3.5vw + 1rem, 4rem);
 }
-.resume-container .summary-info{
-    margin-bottom: 3.2rem;
+.welcome, .language-used, .contact, .social-list{
+    margin-top: clamp(2.4rem, 3vw + 1rem, 3.2rem);
 }
 .summary-info .University-info{
-    font-size: 2.4rem;
+    font-size: clamp(1.8rem, 1.7vw + 1rem, 2.4rem);;
 }
 .University-info a b:hover{
     color: black;
 }
-.resume-container .language-used{
-    margin-top: 5rem;
-}
+
 .resume-container .contact{
-    margin-top: 3.2rem;
     display: flex;
     flex-flow: column;
 }
@@ -151,17 +201,17 @@ body {
     margin-left: 3.2rem;
 }
 .contact ul li a, .contact ul li i{
-    font-size: 1.8rem;
+    font-size: clamp(1.4rem, 1.2vw + 1rem, 1.8rem);;
     color: #009eff;
 }
-
-.social-list{
-    margin-top: 3.2rem;
-}
-.social-list .items{
+.social-list .social-items{
     display: flex;
     font-size: 4rem;
 }
-.social-list .items li{
+.social-list .social-items li{
     margin-right: 1.6rem;
+}
+
+.active-color{
+    color: #fff !important;
 }
